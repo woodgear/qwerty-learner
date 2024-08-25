@@ -3390,18 +3390,26 @@ const kazakhHapinDicts: DictionaryResource[] = [
   },
 ]
 
+const custom: DictionaryResource[] = [
+  {
+    id: 'custom',
+    name: 'custom',
+    description: '自定义',
+    category: '',
+    tags: ['custom'],
+    url: '/dicts/custom.json',
+    length: 43,
+    language: 'en',
+    languageCategory: 'en',
+  },
+]
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
   ...chinaExam,
-  ...internationalExam,
-  ...childrenEnglish,
-  ...programming,
-  ...japaneseExam,
-  ...germanExam,
-  ...kazakhHapinDicts,
+  ...custom,
 
   // {
   //   id: 'zhtest',
